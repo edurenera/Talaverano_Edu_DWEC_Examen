@@ -15,7 +15,7 @@ form.addEventListener('submit', function(event) {
       return response.json();
     })
     .then(userData => {
-      console.log(JSON.stringify(userData,null,2));
+      console.log(JSON.stringify(userData,null,2)); 
       const userHtml = `
         <h2>${userData.name}</h2>
         <p>Username: ${userData.login}</p>
